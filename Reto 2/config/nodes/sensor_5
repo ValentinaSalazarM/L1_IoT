@@ -1,0 +1,13 @@
+List of parameters
+------------------------------------------
+device_type:1
+device_id:5
+device_longitude:-74.06837482005358
+device_latitude:4.6048104269580445
+device_elevation:0.0
+device_radius:0.0
+device_hide:0
+device_draw_battery:false
+device_sensor_unit_radius:50.0
+device_gps_file_name:route0.gps
+device_script_file_name:vehiculo.csc
