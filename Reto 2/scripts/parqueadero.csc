@@ -18,8 +18,7 @@ if( tipo=="parqueo")
 end
 
 if( tipo=="salida")
-	cprint tipo
 	set cupos cupos+1
 	data mens "salidaP" id cupos
-	send mens Bid
+	send mens 4
 end

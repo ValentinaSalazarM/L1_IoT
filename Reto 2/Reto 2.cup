@@ -2,8 +2,8 @@ CupCarbon v. IoT 5.2
 ----------------
 name:Reto 2
 zoom:1
-centerposition_la:4.604080714489823
-centerposition_lo:-74.06781226625237
+centerposition_la:4.604051305395583
+centerposition_lo:-74.06725704898629
 map:0
 display_details:true
 draw_radio_links:true
@@ -16,4 +16,4 @@ display_marker_distance:false
 display_radio_messages:true
 draw_script_file_name:true
 display_print_messages:true
-display_all_routes:false
+display_all_routes:true

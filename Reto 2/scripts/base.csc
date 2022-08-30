@@ -28,6 +28,7 @@ vset valor cupos Pid
 end
 
 if(tipo =="parqueo")
+cprint mens
 set max 0
 set parqueadero 0
 set ruta "route"
@@ -35,7 +36,6 @@ set i 0
 	while(i<3)
 		
 		vget act cupos i
-		
 		if (act>max)
 			set max act
 			set parqueadero i
@@ -43,8 +43,9 @@ set i 0
 		set i i+1
 		
 	end
-
-vset max-1 cupos parqueadero
+dec max
+int temp max
+vset temp cupos parqueadero
 inc parqueadero
 int w parqueadero
 data mens "parqueo" Pid
