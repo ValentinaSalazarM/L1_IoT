@@ -27,6 +27,13 @@ vset valor cupos Pid
 
 end
 
+if(tipo=="entradaP")
+cprint tipo
+dec Pid
+vset valor cupos Pid 
+
+end
+
 if(tipo =="parqueo")
 cprint mens
 set max 0
@@ -36,6 +43,7 @@ set i 0
 	while(i<3)
 		
 		vget act cupos i
+|		cprint i act
 		if (act>max)
 			set max act
 			set parqueadero i
@@ -43,6 +51,11 @@ set i 0
 		set i i+1
 		
 	end
+if(max == 0)
+data mens "lleno" id
+send mens Pid 
+cprint "NO HAY PARQUEADEROS DISPONIBLES"
+else
 dec max
 int temp max
 vset temp cupos parqueadero
@@ -52,6 +65,7 @@ data mens "parqueo" Pid
 cprint mens
 send mens w
 end 
+end
 
 wait 100
 

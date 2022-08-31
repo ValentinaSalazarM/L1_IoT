@@ -1,11 +1,11 @@
- List of radio Modules for the Sensor9
+ List of radio Modules for the Sensor12
 ------------------------------------------
 current_radio_name:radio1
 radio_standard:ZIGBEE
 radio_my:0
 radio_channel:0
 radio_network_id:13108
-radio_radius:50.0
+radio_radius:10.0
 radio_etx:5.92E-5
 radio_erx:2.86E-5
 radio_esleep:1.0E-7

@@ -13,12 +13,21 @@ end
 
 if( tipo=="parqueo")
 	set cupos cupos-1
+	cprint "CUPOSLLEGADA" cupos
 	data mens "parqueo" id
 	send mens Bid
 end
 
 if( tipo=="salida")
-	set cupos cupos+1
+	set cupos cupos+Bid
+	cprint "CUPOSSALIDA" cupos
 	data mens "salidaP" id cupos
+	send mens 4
+end
+
+if( tipo=="entrada")
+	cprint "HOLA" cupos
+	set cupos cupos-Bid
+	data mens "entradaP" id cupos
 	send mens 4
 end

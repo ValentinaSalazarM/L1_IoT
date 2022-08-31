@@ -27,13 +27,12 @@ if(tipo=="parqueo")
 	conc ruta "" "route" valor
 	cprint ruta
 	route ruta
-	rmove 1000
-	wait 40000
-	data mens "salida" id
-	int parqueadero valor
-	send mens parqueadero
-	route "route0"
-	rmove 1000
+	delay 20000
+	route "route7"
+end
+
+if(tipo=="lleno")
+	route "route7"
 end
 
 wait 100
